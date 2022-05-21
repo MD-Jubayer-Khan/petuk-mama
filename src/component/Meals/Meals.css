@@ -1,7 +1,21 @@
 .food-cart{
     background-color: antiquewhite;
     border-radius: 10px;
-    width: 25%;
+    width: 100%;
     height: 500px;
     text-align: center;
 }
+
+@media screen and (max-width: 400px) {
+   .wrapping {
+      flex-wrap: wrap;
+      
+    }
+    .items{
+        margin: auto;
+        width: 100%;
+    }
+    .food-cart{
+        width: 380px !important
+    }
+  }
