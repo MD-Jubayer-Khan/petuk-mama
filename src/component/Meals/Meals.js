@@ -22,7 +22,10 @@ const Meals = () => {
            alert("You cant't add more than 4 item")
        }
        };
-     
+     const chooseRandom =(item) =>{
+         const clearItem = []
+            setItem(clearItem);
+     }
     return (
         <div className='d-flex container'>
              <div className="row row-cols-1 row-cols-md-3 w-75 me-4"> 
@@ -39,7 +42,7 @@ const Meals = () => {
                  }
                 <div>
                 <button className='btn btn-warning food-btn m-4'>Choose for me</button><br/>
-                 <button className='btn btn-success food-btn'>Choose Again</button>
+                 <button onClick={chooseRandom} className='btn btn-success food-btn'>Choose Again</button>
                  
                 </div>
              </div>
