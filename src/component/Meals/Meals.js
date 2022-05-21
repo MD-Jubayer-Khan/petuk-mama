@@ -28,15 +28,10 @@ const Meals = () => {
             setItem(clearItem);
      };
 
-
-        
-        function getRandom (item) {
-            return item[Math.floor((Math.random()*item.length))];
-          }
-          
-          
-      const random =    getRandom([item])
-          
+    //  const randoms = {item, setItem}
+    //  const getRandom = ({item, setItem}) => {
+    //     let random = randoms[Math.floor(Math.random()*randoms.length)];
+    //     setItem(random)}
          
     return (
         <div className='d-flex container wrapping'>
@@ -50,11 +45,10 @@ const Meals = () => {
              <div className="food-cart my-3 w-25">
              <h4>selected item</h4>
                  {       
-                   item.map(EachItem => <Item key={EachItem.id} item={EachItem}></Item>) 
-                  
+                   item.map(EachItem => <Item key={EachItem.id} item={EachItem}></Item>)    
                  }
                 <div>
-                <button onClick={()=> getRandom(random)} type="button" className='btn btn-warning food-btn m-3'>Choose for me</button><br/>
+                <button type="button" className='btn btn-warning food-btn m-3'>Choose for me</button><br/>
                  <button onClick={chooseAgain} type="button" className='btn btn-success food-btn'>Choose Again</button>
                  
                 </div>
