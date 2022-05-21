@@ -14,7 +14,8 @@ const Meals = () => {
     },[]);
 
     const handleAddToCart = (food) => {
-        console.log('clicked');
+        const newItem = [...item, food];
+            setItem (newItem)
        };
     return (
         <div className='d-flex container'>
@@ -26,7 +27,8 @@ const Meals = () => {
              }
              </div>
              <div className="food-cart w-25">
-                 <Item></Item>
+             <h4>selected item{}</h4>
+             <p>item:{item.length}</p>
              </div>
             
         </div>
