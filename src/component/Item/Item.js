@@ -1,10 +1,11 @@
 import React from 'react';
 
 const Item = (props) => {
-    console.log(props.food);
+    const {item} = props
     return (
         <div>
-            <h4>selected item{}</h4>
+             <h4>selected item{}</h4>
+             <p>item:{item.length}</p>
         </div>
     );
 };

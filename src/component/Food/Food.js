@@ -13,8 +13,7 @@ const Food = (props) => {
                   <h5 className="card-title">{name}</h5>
                   <p>Price: {price}</p>
                  <button  className='btn btn-warning food-btn' onClick={()=> props.handleAddToCart(props.food)}>Add Item <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></button>
-              </div>
-                  
+              </div>       
               </div>
           </div>
 

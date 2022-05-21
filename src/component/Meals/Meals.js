@@ -27,8 +27,7 @@ const Meals = () => {
              }
              </div>
              <div className="food-cart w-25">
-             <h4>selected item{}</h4>
-             <p>item:{item.length}</p>
+                <Item item={item}></Item>
              </div>
             
         </div>
