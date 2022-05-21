@@ -14,9 +14,15 @@ const Meals = () => {
     },[]);
 
     const handleAddToCart = (food) => {
+       if(item.length < 4){
         const newItem = [...item, food];
-            setItem (newItem)
+        setItem (newItem)
+       }
+       else{
+           alert("You cant't add more than 4 item")
+       }
        };
+     
     return (
         <div className='d-flex container'>
              <div className="row row-cols-1 row-cols-md-3 w-75 me-4"> 
@@ -27,7 +33,15 @@ const Meals = () => {
              }
              </div>
              <div className="food-cart w-25">
-                <Item item={item}></Item>
+             <h4>selected item{}</h4>
+                 {       
+                   item.map(EachItem => <Item key={EachItem.id} item={EachItem}></Item>)   
+                 }
+                <div>
+                <button className='btn btn-warning food-btn m-4'>Choose for me</button><br/>
+                 <button className='btn btn-success food-btn'>Choose Again</button>
+                 
+                </div>
              </div>
             
         </div>

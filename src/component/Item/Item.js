@@ -1,11 +1,15 @@
 import React from 'react';
+import './Item.css'
 
 const Item = (props) => {
-    const {item} = props
+    const {name, img} = props.item
     return (
-        <div>
-             <h4>selected item{}</h4>
-             <p>item:{item.length}</p>
+    <div>
+        <div className="food-item d-flex align-items-center m-3">
+             <img src={img} alt="" />
+             <p>{name}</p>
+        </div>
+        
         </div>
     );
 };
