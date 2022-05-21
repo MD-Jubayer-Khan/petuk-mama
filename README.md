@@ -1,4 +1,4 @@
-#Petuk mama
+# Petuk mama
 Live site(https://brilliant-halva-15419c.netlify.app/).
 
 ## Available Scripts
